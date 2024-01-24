@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "fb0f1d32-8b8b-49ad-b891-328dbf49bbc4",
+		"name": "Persons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14511782",
+		"_collection_link": "https://martian-meteor-206689.postman.co/workspace/My-Workspace~a0564bcd-cc59-4e41-828a-d31dacdb838e/collection/14511782-fb0f1d32-8b8b-49ad-b891-328dbf49bbc4?action=share&source=collection_link&creator=14511782"
+	},
+	"item": [
+		{
+			"name": "CreateRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"firstName\":\"ANA\",\r\n   \"surName\":\"VIOLETA\",\r\n   \"lastName\":\"GERLOFF\",\r\n   \"documentNumber\":\"44422254588\",\r\n   \"documentType\":\"F\",\r\n   \"gender\":\"F\",\r\n   \"dateOfBirth\":\"25-01-2000\",\r\n   \"mothersName\":\"NENA MARIA\",\r\n   \"fathersName\":\"NENO ROGERIO\",\r\n   \"stateOfBirth\":\"SP\",\r\n   \"cityOfBirth\": \"SAO PAULO\",\r\n   \"countryOfBirth\": \"BRASIL\",\r\n   \"address\": \"RUA AGOSTINHO\",\r\n   \"email\": \"EMAIL@EMAIL.COM\",\r\n   \"phone\": \"5511 99999-9999\",\r\n   \"personalStatus\": \"E\",\r\n   \"politicalExposedPersonIndicator\": \"N\",\r\n   \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRegister",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"firstName\":\"ATHENA\",\r\n   \"surName\":\"VACILIUS\",\r\n   \"lastName\":\"ATOS\",\r\n   \"documentNumber\":\"44422255588\",\r\n   \"documentType\":\"F\",\r\n   \"gender\":\"F\",\r\n   \"dateOfBirth\":\"25-12-2001\",\r\n   \"mothersName\":\"ANA VACILIUS\",\r\n   \"fathersName\":\"HERMES VACILIUS\",\r\n   \"stateOfBirth\":\"SP\",\r\n   \"cityOfBirth\": \"SAO PAULO\",\r\n   \"countryOfBirth\": \"BRASIL\",\r\n   \"personalStatus\": \"D\",\r\n   \"politicalExposedPersonIndicator\": \"N\",\r\n   \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persons/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ByPersonId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persons/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRegister",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persons/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

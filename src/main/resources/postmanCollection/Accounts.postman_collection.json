@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "0f85744b-6a03-4f05-a25b-f5b8e77146b8",
+		"name": "Accounts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14511782",
+		"_collection_link": "https://martian-meteor-206689.postman.co/workspace/My-Workspace~a0564bcd-cc59-4e41-828a-d31dacdb838e/collection/14511782-0f85744b-6a03-4f05-a25b-f5b8e77146b8?action=share&source=collection_link&creator=14511782"
+	},
+	"item": [
+		{
+			"name": "CreateAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accountType\":\"CONTA CORRENTE\",\r\n   \"salesChannel\":\"AGENCIA\",\r\n   \"occupation\": \"APOSENTADO\",\r\n   \"monthlyIncome\": 8000.00,\r\n   \"balance\": 4412.00\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/44422254588",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"44422254588"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllAccountsByDocumentNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/person/44422254589",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"person",
+						"44422254589"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAccountByBranchCode",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/0698",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"0698"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
