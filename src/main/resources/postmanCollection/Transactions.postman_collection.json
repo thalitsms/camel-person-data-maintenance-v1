@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "778c2cc1-dbc0-4a4d-b2d6-5157a683ec9b",
+		"name": "Transactions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14511782",
+		"_collection_link": "https://martian-meteor-206689.postman.co/workspace/My-Workspace~a0564bcd-cc59-4e41-828a-d31dacdb838e/collection/14511782-778c2cc1-dbc0-4a4d-b2d6-5157a683ec9b?action=share&source=collection_link&creator=14511782"
+	},
+	"item": [
+		{
+			"name": "CreateTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"fromAccountId\": 2,\r\n   \"toAccountId\": 1,\r\n   \"amount\": 150.00\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReversalTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transactions/reverse/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactions",
+						"reverse",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
